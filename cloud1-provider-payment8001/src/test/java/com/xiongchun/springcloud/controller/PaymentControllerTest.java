@@ -1,7 +1,7 @@
 package com.xiongchun.springcloud.controller;
 
-import com.xiongchun.springcloud.entity.CommonsResult;
-import com.xiongchun.springcloud.entity.Payment;
+import com.xiongchun.commoons.entity.CommonsResult;
+import com.xiongchun.commoons.entity.Payment;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +20,7 @@ public class PaymentControllerTest {
   @Test
   public void createPayment() {
 //    Payment payment = new Payment("1003");
-    Payment payment = new Payment("1004");
+    Payment payment = new Payment("1005");
     CommonsResult commonsResult = paymentController.createPayment(payment);
   }
 

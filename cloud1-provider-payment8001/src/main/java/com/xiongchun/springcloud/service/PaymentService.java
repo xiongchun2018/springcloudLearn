@@ -1,6 +1,6 @@
 package com.xiongchun.springcloud.service;
 
-import com.xiongchun.springcloud.entity.Payment;
+import com.xiongchun.commoons.entity.Payment;
 
 import java.util.List;
 

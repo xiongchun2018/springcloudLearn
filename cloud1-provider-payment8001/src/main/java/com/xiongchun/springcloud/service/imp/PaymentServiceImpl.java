@@ -1,7 +1,7 @@
 package com.xiongchun.springcloud.service.imp;
 
 import com.xiongchun.springcloud.dao.PaymentDao;
-import com.xiongchun.springcloud.entity.Payment;
+import com.xiongchun.commoons.entity.Payment;
 import com.xiongchun.springcloud.service.PaymentService;
 import org.springframework.stereotype.Service;
 

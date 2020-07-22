@@ -1,7 +1,7 @@
 package com.xiongchun.order80.controller;
 
-import com.xiongchun.order80.entity.CommonsResult;
-import com.xiongchun.order80.entity.Payment;
+import com.xiongchun.commoons.entity.CommonsResult;
+import com.xiongchun.commoons.entity.Payment;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

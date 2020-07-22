@@ -1,6 +1,6 @@
 package com.xiongchun.springcloud.dao;
 
-import com.xiongchun.springcloud.entity.Payment;
+import com.xiongchun.commoons.entity.Payment ;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

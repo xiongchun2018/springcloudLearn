@@ -1,4 +1,4 @@
-package com.xiongchun.springcloud.entity;
+package com.xiongchun.commoons.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,6 +13,6 @@ public class CommonsResult<T> {
   private T data;
 
   public CommonsResult(Integer code, String message) {
-    this(code,message,null);
+    this(code, message, null);
   }
 }

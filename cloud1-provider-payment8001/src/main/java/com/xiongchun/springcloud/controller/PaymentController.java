@@ -1,13 +1,14 @@
 package com.xiongchun.springcloud.controller;
 
-import com.xiongchun.springcloud.entity.CommonsResult;
-import com.xiongchun.springcloud.entity.Payment;
 import com.xiongchun.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import com.xiongchun.commoons.entity.Payment ;
+import com.xiongchun.commoons.entity.CommonsResult ;
+
 import java.util.List;
 
 @Controller

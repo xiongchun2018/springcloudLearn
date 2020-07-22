@@ -22,7 +22,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
-  type-aliases-package: com.xiongchun.springcloud.entity
+  type-aliases-package: com.xiongchun.commoons.entity
 
 #eureka:
 #  client:

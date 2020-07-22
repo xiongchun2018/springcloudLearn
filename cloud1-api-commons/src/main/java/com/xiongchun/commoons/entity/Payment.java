@@ -1,4 +1,4 @@
-package com.xiongchun.order80.entity;
+package com.xiongchun.commoons.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
