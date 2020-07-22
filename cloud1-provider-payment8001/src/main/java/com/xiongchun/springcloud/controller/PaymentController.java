@@ -19,10 +19,10 @@ public class PaymentController {
 
   @PostMapping("/create")
   @ResponseBody
-  public CommonsResult<Integer> createPayment(Payment payment) {
-    log.info("PaymentController -> createPayment接受到的参数是{}",payment);
+  public CommonsResult<Integer> createPayment( @RequestBody Payment payment) {//必须加上RequestBody否则restTemplate传来的参数，接收不到
+    log.info("payment8001--> PaymentController -> createPayment接受到的参数是{}",payment);
     Integer integer = paymentService.createPayment(payment);
-    log.info("PaymentController -> createPayment返回的结果是{}",integer);
+    log.info("payment8001--> PaymentController -> createPayment返回的结果是{}",integer);
     if(integer > 0){
       return new CommonsResult(401,"新增成功",integer);
     }else {
@@ -35,7 +35,7 @@ public class PaymentController {
   @ResponseBody
   public CommonsResult<List<Payment>> findAllPayment() {
     List<Payment> allPayment = paymentService.findAllPayment();
-    log.info("PaymentController -> findAllPayment查询所有的结果集{}",allPayment);
+    log.info("payment8001--> PaymentController -> findAllPayment查询所有的结果集{}",allPayment);
     if (allPayment != null && allPayment.size()>0) {
       int i = 10/0;
       return new CommonsResult(200,"查询成功",allPayment);
@@ -47,9 +47,9 @@ public class PaymentController {
 
   @GetMapping("/findbyId/{id}")
   public @ResponseBody CommonsResult<Payment> findPaymentById(@PathVariable("id") Long id) {
-    log.info("PaymentController -> findPaymentById需要查询的id是{}",id);
+    log.info("payment8001--> PaymentController -> findPaymentById需要查询的id是{}",id);
     Payment payment = paymentService.findPaymentById(id);
-    log.info("PaymentController -> findPaymentById根据id查到的结果{}",payment);
+    log.info("payment8001--> PaymentController -> findPaymentById根据id查到的结果{}",payment);
     if (payment != null) {
       return new CommonsResult(200,"查询成功",payment);
     } else {

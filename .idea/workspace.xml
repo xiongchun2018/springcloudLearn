@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d7f7b6d-a84e-45f6-abdd-5096390d1a85" name="Default Changelist" comment="" />
+    <list default="true" id="9d7f7b6d-a84e-45f6-abdd-5096390d1a85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/OrderMain80.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/config/ApplicationContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/entity/CommonsResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/entity/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/test/java/com/xiongchun/order80/controller/OrderControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/OrderMain80.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/config/ApplicationContextConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/controller/OrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/entity/CommonsResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/entity/Payment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/test-classes/com/xiongchun/order80/controller/OrderControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/测试git分支" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-consumer-order80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-consumer-order80/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +39,10 @@
         <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -38,14 +62,19 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1ewsFV29xhyaOFvflnnK8zkQvVV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud1-provider-payment8001/src/main/resources/mapper" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -60,6 +89,11 @@
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -71,7 +105,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PaymentMain8001">
+  <component name="RunManager" selected="Spring Boot.OrderMain80">
+    <configuration name="OrderControllerTest.createPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud1-consumer-order80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiongchun.order80.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiongchun.order80.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.xiongchun.order80.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="createPayment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymentControllerTest.createPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cloud1-provider-payment8001" />
       <extension name="coverage">
@@ -120,6 +170,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud1-consumer-order80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiongchun.order80.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.order80.OrderMain80" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymentMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud1-provider-payment8001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.springcloud.PaymentMain8001" />
@@ -129,11 +192,33 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OrderMain80" />
+        <item itemvalue="JUnit.OrderControllerTest.createPayment" />
         <item itemvalue="JUnit.PaymentControllerTest.findAllPayment" />
         <item itemvalue="JUnit.PaymentControllerTest.findPaymentById" />
         <item itemvalue="JUnit.PaymentControllerTest.createPayment" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5ba82d58" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5ba82d58" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fd4d50b3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -145,12 +230,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595243885126</updated>
-      <workItem from="1595243889712" duration="5052000" />
       <workItem from="1595287028522" duration="9899000" />
+      <workItem from="1595287028522" duration="10857000" />
+      <workItem from="1595374079494" duration="1471000" />
+      <workItem from="1595376415431" duration="232000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
