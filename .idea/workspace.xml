@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d7f7b6d-a84e-45f6-abdd-5096390d1a85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/OrderMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/config/ApplicationContextConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/entity/CommonsResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/test/java/com/xiongchun/order80/controller/OrderControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/OrderMain80.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/config/ApplicationContextConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/controller/OrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/entity/CommonsResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/entity/Payment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/test-classes/com/xiongchun/order80/controller/OrderControllerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/测试git分支" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud1-consumer-order80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-consumer-order80/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/mapper/PaymentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/mapper/PaymentMapper.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +14,20 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
     <option name="PARALLEL_COMPILATION" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -41,6 +37,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="integrationcommons" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
@@ -62,8 +63,11 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1ewsFV29xhyaOFvflnnK8zkQvVV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -105,8 +109,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderMain80">
-    <configuration name="OrderControllerTest.createPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OrderControllerTest.findPaymentById">
+    <configuration name="OrderControllerTest.findPaymentById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cloud1-consumer-order80" />
       <extension name="coverage">
         <pattern>
@@ -116,7 +120,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.xiongchun.order80.controller" />
       <option name="MAIN_CLASS_NAME" value="com.xiongchun.order80.controller.OrderControllerTest" />
-      <option name="METHOD_NAME" value="createPayment" />
+      <option name="METHOD_NAME" value="findPaymentById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,10 +197,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.OrderMain80" />
-        <item itemvalue="JUnit.OrderControllerTest.createPayment" />
-        <item itemvalue="JUnit.PaymentControllerTest.findAllPayment" />
         <item itemvalue="JUnit.PaymentControllerTest.findPaymentById" />
+        <item itemvalue="JUnit.PaymentControllerTest.findAllPayment" />
         <item itemvalue="JUnit.PaymentControllerTest.createPayment" />
+        <item itemvalue="JUnit.OrderControllerTest.findPaymentById" />
       </list>
     </recent_temporary>
   </component>
@@ -233,8 +237,23 @@
       <workItem from="1595287028522" duration="9899000" />
       <workItem from="1595287028522" duration="10857000" />
       <workItem from="1595374079494" duration="1471000" />
-      <workItem from="1595376415431" duration="232000" />
+      <workItem from="1595376415431" duration="3851000" />
     </task>
+    <task id="LOCAL-00001" summary="抽取实体类，构建基本的commons工程">
+      <created>1595380747664</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595380747664</updated>
+    </task>
+    <task id="LOCAL-00002" summary="master合并分支">
+      <created>1595380960233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595380960233</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,5 +271,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="添加order80项目 并成功测试" />
+    <MESSAGE value="抽取实体类，构建基本的commons工程" />
+    <MESSAGE value="master合并分支" />
+    <option name="LAST_COMMIT_MESSAGE" value="master合并分支" />
   </component>
 </project>

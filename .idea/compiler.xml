@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud1-consumer-order80" />
         <module name="cloud1-provider-payment8001" />
+        <module name="cloud1-api-commons" />
       </profile>
     </annotationProcessing>
   </component>
