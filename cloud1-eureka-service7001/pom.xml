@@ -9,13 +9,14 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>cloud1-consumer-order80</artifactId>
+  <artifactId>cloud1-eureka-service7001</artifactId>
   <dependencies>
-    <!-- 包含了sleuth zipkin 数据链路追踪-->
+    <!-- eureka-server -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-zipkin</artifactId>
+      <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
     </dependency>
+    <!-- 引用自己定义的api通用包，可以使用Payment支付Entity -->
     <dependency><!-- 引用自己定义的api通用包，可以使用Payment支付Entity -->
       <groupId>com.xiongchun.springcloud</groupId>
       <artifactId>cloud1-api-commons</artifactId>
@@ -26,16 +27,11 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <!--监控-->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-actuator</artifactId>
-    </dependency>
-    <!--eureka client-->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-    </dependency>
-    <!--热部署-->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.boot</groupId>-->
+<!--      <artifactId>spring-boot-starter-actuator</artifactId>-->
+<!--    </dependency>-->
+    <!-- 一般通用配置 -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
