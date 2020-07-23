@@ -20,7 +20,8 @@ eureka:
 #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 #      访问的访问http://localhost:7002/
 #      defaultZone: http://localhost:7002/eureka/
-#  server:
-#    #关闭自我保护模式，保证不可用服务被及时删除
-#    enable-self-preservation: false
-#    eviction-interval-timer-in-ms: 2000
+  server:
+      #关闭自我保护模式，保证不可用服务被及时删除
+      enable-self-preservation: false
+#      默认 服务丢失 是会对服务进行 一定时间段 保护的，这里设置为2毫秒 也就是极快的过期，不进行保护
+      eviction-interval-timer-in-ms: 2000

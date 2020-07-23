@@ -44,5 +44,15 @@ public class OrderController {
     return payment;
   }
 
+  @GetMapping("/getDiscoveryClientMsg")
+  public @ResponseBody CommonsResult<Payment> getDiscoveryClientMsg() {
+    String url = PAYMENT_URL+"/payment/getDiscoveryClientMsg";
+    CommonsResult discoveryClientMsg = restTemplate.getForObject(url, CommonsResult.class);
+    log.info("order80->PaymentController -> getDiscoveryClientMsg获取到的结果是{}",discoveryClientMsg);
+    return discoveryClientMsg;
+  }
+
+
+
 
 }

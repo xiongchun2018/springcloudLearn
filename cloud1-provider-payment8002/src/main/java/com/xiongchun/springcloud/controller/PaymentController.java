@@ -2,6 +2,9 @@ package com.xiongchun.springcloud.controller;
 
 import com.xiongchun.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,7 +12,10 @@ import javax.annotation.Resource;
 import com.xiongchun.commoons.entity.Payment ;
 import com.xiongchun.commoons.entity.CommonsResult ;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/payment")
@@ -17,6 +23,9 @@ import java.util.List;
 public class PaymentController {
   @Resource
   private PaymentService paymentService;
+
+  @Autowired
+  private DiscoveryClient discoveryClient;
 
   @PostMapping("/create")
   @ResponseBody
@@ -55,6 +64,26 @@ public class PaymentController {
       return new CommonsResult(200,"查询成功",payment);
     } else {
       return new CommonsResult(401,"查询失败");
+    }
+  }
+
+  @GetMapping("/getDiscoveryClientMsg")
+  public @ResponseBody CommonsResult getDiscoveryClientMsg(){
+
+    Map<String,Object> discoveryClientMsg = new HashMap<>();
+    List<String> sericesLisist = new ArrayList<>();
+    //获取所有 服务节点 信息
+    List<String> services = discoveryClient.getServices();
+    discoveryClientMsg.put("services",services);
+    for (String service : services) {
+      //获取每个服务 下的 所有实例
+      List<ServiceInstance> instances = discoveryClient.getInstances(service);
+      discoveryClientMsg.put(service,instances);
+    }
+    if (discoveryClientMsg.size() > 0) {
+      return new CommonsResult(200,"payment8002-发现如下服务信息---->",discoveryClientMsg);
+    } else {
+      return new CommonsResult(400,"payment8002-无服务信息发现" );
     }
   }
 }
