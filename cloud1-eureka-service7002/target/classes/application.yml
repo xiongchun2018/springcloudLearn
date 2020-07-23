@@ -4,7 +4,7 @@ server:
 eureka:
   instance:
 #    hostname: eureka7001.com #eureka服务端的实例名称
-    hostname: localhost #eureka服务端的实例名称
+    hostname: eureka7002.com #eureka服务端的实例名称
   client:
     # false表示不向注册中心注册自己
     register-with-eureka: false
@@ -15,9 +15,9 @@ eureka:
       # 单机 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       # 相互注册
       #defaultZone: http://eureka7002.com:7002/eureka/
-#      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/
 #      其实也就是下面的地址  （下面的第一版地址，上面是以后的地址）
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 #      访问的访问http://localhost:7002/
 #      defaultZone: http://localhost:7002/eureka/
 #  server:

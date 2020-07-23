@@ -1,10 +1,11 @@
 server:
   port: 7001
-
+#修改windows的host文件 进行路径映射
 eureka:
   instance:
+#    自己的地址
 #    hostname: eureka7001.com #eureka服务端的实例名称
-    hostname: localhost #eureka服务端的实例名称
+    hostname: eureka7001.com #eureka服务端的实例名称
   client:
     # false表示不向注册中心注册自己
     register-with-eureka: false
@@ -13,11 +14,12 @@ eureka:
     service-url:
       # 设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
       # 单机 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-      # 相互注册
-      #defaultZone: http://eureka7002.com:7002/eureka/
+      # 相互注册   守望者地址
+#      第二版地址  7001与7002集群
+      defaultZone: http://eureka7002.com:7002/eureka/
 #      defaultZone: http://eureka7001.com:7001/eureka/
 #      其实也就是下面的地址  （下面的第一版地址，上面是以后的地址）
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 #      访问的访问http://localhost:7001/
 #      defaultZone: http://localhost:7001/eureka/
 #  server:

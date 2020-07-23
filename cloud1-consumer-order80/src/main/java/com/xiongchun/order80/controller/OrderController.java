@@ -15,7 +15,9 @@ import java.util.Map;
 @Slf4j
 public class OrderController {
 
-  static final String PAYMENT_URL = "http://localhost:8001";
+//  static final String PAYMENT_URL = "http://localhost:8001";
+  //provider集群后
+  private static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
   @Autowired
   private RestTemplate restTemplate;
