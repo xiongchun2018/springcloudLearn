@@ -1,0 +1,14 @@
+server:
+#  8003应该是留给eureka第三个服务 集群用的吧
+  port: 8004
+
+
+#服务别名 --- 注册zookeeper到注册中心名称
+spring:
+  application:
+    name: cloud-provider-payment
+  cloud:
+    zookeeper:
+#      切记需要关闭防火墙
+#      集成zookeeper主要两个注意  1.版本问题  zookeeper是3.4.9 依赖是3.4.14  2.关闭防火墙或者开放2181端口
+      connect-string: 192.168.32.134:2181
