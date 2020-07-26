@@ -61,9 +61,9 @@ public class PaymentController {
     Payment payment = paymentService.findPaymentById(id);
     log.info("payment8001--> PaymentController -> findPaymentById根据id查到的结果{}",payment);
     if (payment != null) {
-      return new CommonsResult(200,"查询成功",payment);
+      return new CommonsResult(200,"8001查询成功",payment);
     } else {
-      return new CommonsResult(401,"查询失败");
+      return new CommonsResult(401,"8001查询失败");
     }
   }
 

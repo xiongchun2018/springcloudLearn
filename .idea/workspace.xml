@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d7f7b6d-a84e-45f6-abdd-5096390d1a85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-consul-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-consul-order80/src/main/java/com/xiongchun/consul/OrderConsulMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-consul-order80/src/main/java/com/xiongchun/consul/config/ApplicationContextConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-consul-order80/src/main/java/com/xiongchun/consul/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-consul-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-provider-consul-payment8006/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-provider-consul-payment8006/src/main/java/com/xiongchun/consul/PaymentConsulMain8006.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-provider-consul-payment8006/src/main/java/com/xiongchun/consul/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud1-provider-consul-payment8006/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/ribbon/MyRibbonRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/OrderMain80.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/OrderMain80.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/OrderMain80.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/OrderMain80.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8002/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8002/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8002/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8002/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,10 +120,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderConsulMain80">
+  <component name="RunManager" selected="Spring Boot.OrderMain80">
     <configuration name="EurekaMain7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud1-eureka-service7001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.eureka.EurekaMain7001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaMain7002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud1-eureka-service7002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiongchun.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.eureka.EurekaMain7002" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,8 +163,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.order80.OrderMain80" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_241\jre" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,35 +202,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZookeeperMain8004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud1-provider-payment8004" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiongchun.zookeeper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.zookeeper.ZookeeperMain8004" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Spring Boot.EurekaMain7001" />
       <item itemvalue="Spring Boot.PaymentMain8001" />
-      <item itemvalue="Spring Boot.OrderMain80" />
       <item itemvalue="Spring Boot.PaymentMain8002" />
-      <item itemvalue="Spring Boot.ZookeeperMain8004" />
       <item itemvalue="Spring Boot.PaymentConsulMain8006" />
       <item itemvalue="Spring Boot.OrderConsulMain80" />
+      <item itemvalue="Spring Boot.EurekaMain7002" />
+      <item itemvalue="Spring Boot.OrderMain80" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OrderMain80" />
+        <item itemvalue="Spring Boot.PaymentMain8002" />
+        <item itemvalue="Spring Boot.EurekaMain7002" />
         <item itemvalue="Spring Boot.OrderConsulMain80" />
         <item itemvalue="Spring Boot.PaymentConsulMain8006" />
-        <item itemvalue="Spring Boot.ZookeeperMain8004" />
-        <item itemvalue="Spring Boot.PaymentMain8002" />
-        <item itemvalue="Spring Boot.OrderMain80" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +234,7 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@409df69c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8dc856bf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f6fa1461" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
