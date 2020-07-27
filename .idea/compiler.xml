@@ -13,6 +13,7 @@
         <module name="cloud1-api-commons" />
         <module name="cloud1-eureka-service7002" />
         <module name="cloud1-eureka-service7001" />
+        <module name="cloud1-consumer-openfeign-order80" />
         <module name="cloud1-provider-consul-payment8006" />
         <module name="cloud1-provider-payment8004" />
         <module name="cloud1-consumer-consul-order80" />

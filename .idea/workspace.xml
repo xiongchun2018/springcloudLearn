@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d7f7b6d-a84e-45f6-abdd-5096390d1a85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/src/main/java/com/xiongchun/openfeign/PaymentOpenFeignMain80.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/src/main/java/com/xiongchun/openfeign/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/src/main/java/com/xiongchun/openfeign/service/PaymentServiceOpenFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/target/classes/META-INF/cloud1-consumer-openfeign-order80.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/target/classes/com/xiongchun/openfeign/PaymentOpenFeignMain80.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/target/classes/com/xiongchun/openfeign/controller/PaymentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/target/classes/com/xiongchun/openfeign/service/PaymentServiceOpenFeign.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +44,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -78,7 +91,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud1-consumer-openfeign-order80/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -89,6 +102,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA_SW\Java_IDE_WKSP\Idea_WKSP\cloudparent\cloud1-consumer-openfeign-order80\src\main\resources" />
       <recent name="D:\JAVA_SW\Java_IDE_WKSP\Idea_WKSP\cloudparent\cloud1-provider-payment8001\src\main\resources\mapper" />
       <recent name="D:\JAVA_SW\Java_IDE_WKSP\Idea_WKSP\cloudparent\cloud1-provider-payment8001\src\main\resources" />
     </key>
@@ -110,39 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderControllerTest.findPaymentById">
-    <configuration name="OrderControllerTest.findPaymentById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cloud1-consumer-order80" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiongchun.order80.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xiongchun.order80.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.xiongchun.order80.controller.OrderControllerTest" />
-      <option name="METHOD_NAME" value="findPaymentById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PaymentControllerTest.createPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cloud1-provider-payment8001" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiongchun.springcloud.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xiongchun.springcloud.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.xiongchun.springcloud.controller.PaymentControllerTest" />
-      <option name="METHOD_NAME" value="createPayment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.PaymentOpenFeignMain80">
     <configuration name="PaymentControllerTest.findAllPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cloud1-provider-payment8001" />
       <extension name="coverage">
@@ -175,6 +157,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaMain7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud1-eureka-service7001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.eureka.EurekaMain7001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaMain7002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud1-eureka-service7002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.eureka.EurekaMain7002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderConsulMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud1-consumer-consul-order80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.consul.OrderConsulMain80" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud1-consumer-order80" />
       <extension name="coverage">
@@ -184,6 +187,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.order80.OrderMain80" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentConsulMain8006" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud1-provider-consul-payment8006" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.consul.PaymentConsulMain8006" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,22 +220,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentOpenFeignMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud1-consumer-openfeign-order80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiongchun.openfeign.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.openfeign.PaymentOpenFeignMain80" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZookeeperMain8004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud1-provider-payment8004" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiongchun.zookeeper.ZookeeperMain8004" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.OrderControllerTest.findPaymentById" />
-      <item itemvalue="JUnit.PaymentControllerTest.createPayment" />
       <item itemvalue="JUnit.PaymentControllerTest.findAllPayment" />
       <item itemvalue="JUnit.PaymentControllerTest.findPaymentById" />
       <item itemvalue="Spring Boot.PaymentMain8001" />
       <item itemvalue="Spring Boot.PaymentMain8002" />
       <item itemvalue="Spring Boot.OrderMain80" />
+      <item itemvalue="Spring Boot.EurekaMain7001" />
+      <item itemvalue="Spring Boot.PaymentConsulMain8006" />
+      <item itemvalue="Spring Boot.ZookeeperMain8004" />
+      <item itemvalue="Spring Boot.EurekaMain7002" />
+      <item itemvalue="Spring Boot.OrderConsulMain80" />
+      <item itemvalue="Spring Boot.PaymentOpenFeignMain80" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PaymentOpenFeignMain80" />
+        <item itemvalue="Spring Boot.PaymentMain8002" />
         <item itemvalue="Spring Boot.OrderMain80" />
         <item itemvalue="JUnit.PaymentControllerTest.findPaymentById" />
         <item itemvalue="JUnit.PaymentControllerTest.findAllPayment" />
-        <item itemvalue="JUnit.PaymentControllerTest.createPayment" />
-        <item itemvalue="JUnit.OrderControllerTest.findPaymentById" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +268,17 @@
       <serviceView>
         <option name="contentProportion" value="0.1737013" />
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ae3934ea" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ae3934ea" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@759d0ef" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -255,7 +299,7 @@
       <workItem from="1595374079494" duration="1471000" />
       <workItem from="1595376415431" duration="3851000" />
       <workItem from="1595841543097" duration="817000" />
-      <workItem from="1595842388586" duration="1078000" />
+      <workItem from="1595842388586" duration="7449000" />
     </task>
     <task id="LOCAL-00001" summary="抽取实体类，构建基本的commons工程">
       <created>1595380747664</created>
@@ -271,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595380960233</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加.gitignore忽略文件">
+      <created>1595843706008</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595843706008</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +346,7 @@
     <MESSAGE value="添加order80项目 并成功测试" />
     <MESSAGE value="抽取实体类，构建基本的commons工程" />
     <MESSAGE value="master合并分支" />
-    <option name="LAST_COMMIT_MESSAGE" value="master合并分支" />
+    <MESSAGE value="添加.gitignore忽略文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加.gitignore忽略文件" />
   </component>
 </project>
