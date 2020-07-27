@@ -2,11 +2,14 @@ package com.xiongchun.order80.controller;
 
 import com.xiongchun.commoons.entity.CommonsResult;
 import com.xiongchun.commoons.entity.Payment;
+import com.xiongchun.order80.mylb.MyLoadBalancerInterface;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,6 +24,9 @@ public class OrderController {
 
   @Autowired
   private RestTemplate restTemplate;
+
+  @Autowired
+  private MyLoadBalancerInterface myLoadBalancer;
 
   @GetMapping("/create")
   @ResponseBody
@@ -52,7 +58,14 @@ public class OrderController {
     return discoveryClientMsg;
   }
 
-
-
+  @GetMapping("/getByMyLoadBalancer/findbyId/{id}")
+  public CommonsResult getMyLoadBalancer(@PathVariable("id") Long id){
+    //拿到需要真正调用的服务器
+    ServiceInstance instances = myLoadBalancer.instances();
+    //去调用
+    //首先拿到URI
+    URI uri = instances.getUri();
+    return restTemplate.getForObject(uri+"/payment/findbyId/"+id.toString(),CommonsResult.class);
+  }
 
 }

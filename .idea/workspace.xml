@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d7f7b6d-a84e-45f6-abdd-5096390d1a85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/ribbon/MyRibbonRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/mylb/MyLoadBalancerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/mylb/MyLoadBalancerInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/OrderMain80.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/OrderMain80.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/OrderMain80.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/OrderMain80.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8001/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8002/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8002/src/main/java/com/xiongchun/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud1-provider-payment8002/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-provider-payment8002/target/classes/com/xiongchun/springcloud/controller/PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/config/ApplicationContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-consumer-order80/src/main/java/com/xiongchun/order80/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/config/ApplicationContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/config/ApplicationContextConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud1-consumer-order80/target/classes/com/xiongchun/order80/controller/OrderController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="p29" />
+        <entry key="$PROJECT_DIR$" value="P39" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -229,12 +228,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@409df69c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c6ead2d9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@409df69c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f6fa1461" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c6ead2d9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@37936c9b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -259,6 +258,7 @@
       <workItem from="1595465137500" duration="13950000" />
       <workItem from="1595552938142" duration="9043000" />
       <workItem from="1595725614104" duration="2709000" />
+      <workItem from="1595812522295" duration="6021000" />
     </task>
     <task id="LOCAL-00001" summary="抽取实体类，构建基本的commons工程">
       <created>1595380747664</created>
@@ -309,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595573911783</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="P39使用自己选择的负载均衡器--随机均衡">
+      <created>1595752004966</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1595752004966</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +344,7 @@
     <MESSAGE value="cloud集群7001+7002 provider集群8001+8002 restTemplate实现负载均衡" />
     <MESSAGE value="p27" />
     <MESSAGE value="p30搭建zookeeper的pament8004懒得搭建zookeeper版本的order80了，都是一样的就几个配置的而已" />
-    <option name="LAST_COMMIT_MESSAGE" value="p30搭建zookeeper的pament8004懒得搭建zookeeper版本的order80了，都是一样的就几个配置的而已" />
+    <MESSAGE value="P39使用自己选择的负载均衡器--随机均衡" />
+    <option name="LAST_COMMIT_MESSAGE" value="P39使用自己选择的负载均衡器--随机均衡" />
   </component>
 </project>
